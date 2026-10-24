@@ -1,181 +1,125 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Deco Desk And Design</title>
-
-    <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Shop Deco Store cleaning products: dishwashing liquid, multipurpose cleaning cream and pine gel. Ask us about bulk packaging and wholesale sales.">
+<title>Deco Store | Cleaning Products</title>
+<style>
+:root{--blue:#0755a5;--deep:#07356b;--green:#39a923;--lime:#76c928;--sky:#eef8ff;--ink:#17324d;--muted:#587087;--line:#d9e8f3;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#f5fbff;line-height:1.55}
+a{color:inherit}.topbar{background:linear-gradient(100deg,var(--green),var(--blue));color:white;padding:12px 5%;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.brand{font-size:1.6rem;font-weight:900;letter-spacing:.4px}.brand span{color:#d9ff9b}.tagline{font-size:.88rem}
+nav{display:flex;gap:8px;flex-wrap:wrap}nav a{padding:9px 12px;text-decoration:none;border-radius:22px;font-weight:700;font-size:.9rem}nav a:hover,nav a:focus{background:#ffffff25;outline:2px solid #fff}
+.wrap{width:min(1120px,92%);margin:auto}.hero{display:grid;grid-template-columns:1.02fr .98fr;align-items:center;gap:28px;padding:42px 0 30px}
+.eyebrow{color:var(--green);font-weight:900;text-transform:uppercase;letter-spacing:1.6px;font-size:.85rem}.hero h1{font-size:clamp(2.3rem,5vw,4.4rem);line-height:.98;margin:10px 0 16px;color:var(--blue);letter-spacing:-1.8px}.hero h1 span{color:var(--green)}.hero p{font-size:1.1rem;color:var(--muted);max-width:540px}
+.btn{display:inline-flex;justify-content:center;align-items:center;min-height:46px;padding:12px 19px;border:0;border-radius:28px;background:var(--green);color:#fff;font-weight:800;text-decoration:none;cursor:pointer;font-size:1rem}.btn.secondary{background:var(--blue)}.btn:focus,button:focus,summary:focus{outline:3px solid #f2b900;outline-offset:3px}
+.hero-img{width:100%;display:block;border-radius:22px;box-shadow:0 10px 28px #07356b1a;border:1px solid var(--line)}
+.strip{background:var(--deep);color:white;text-align:center;padding:13px 4%;font-weight:800;letter-spacing:.3px}
+section{padding:35px 0}.section-title{text-align:center;margin:0 0 8px;color:var(--blue);font-size:clamp(1.7rem,3vw,2.5rem)}.section-intro{text-align:center;color:var(--muted);max-width:720px;margin:0 auto 25px}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}.card{background:white;border:1px solid var(--line);border-radius:17px;padding:20px;box-shadow:0 5px 18px #07356b0a;display:flex;flex-direction:column;min-width:0}.product-icon{width:58px;height:58px;border-radius:16px;background:linear-gradient(135deg,#e4f7dc,#e1f4ff);display:grid;place-items:center;font-size:1.9rem;margin-bottom:12px}.card h3{color:var(--blue);margin:0 0 5px;font-size:1.25rem}.size{display:inline-block;align-self:flex-start;background:#e9f7e4;color:#247a1d;border-radius:18px;padding:4px 10px;font-size:.82rem;font-weight:800;margin:6px 0 9px}.card p{color:var(--muted);margin:5px 0 12px}.details{border-top:1px solid var(--line);margin-top:auto;padding-top:10px}.details summary{cursor:pointer;color:var(--blue);font-weight:800;padding:7px 0;min-height:44px;display:flex;align-items:center}.details[open] summary{color:var(--green)}.details ul{padding-left:20px;color:var(--muted);margin:4px 0 12px}.small-note{font-size:.88rem;color:var(--muted)}
+.bulk{background:linear-gradient(130deg,#e8f7ff,#effbe9);border:1px solid var(--line);border-radius:22px;padding:26px;display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:center}.bulk h2{color:var(--blue);font-size:1.8rem;line-height:1.1;margin:0 0 10px}.bulk ul{padding-left:20px}.pack-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.pack{background:white;border:1px solid var(--line);border-radius:13px;padding:14px;font-weight:800;color:var(--blue)}.pack span{display:block;color:var(--muted);font-size:.85rem;font-weight:500}
+.sales-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.sale{background:white;border:1px solid var(--line);border-radius:15px;padding:18px}.sale strong{color:var(--green);display:block;font-size:1.1rem;margin-bottom:5px}
+.order{background:var(--blue);color:white;border-radius:22px;padding:28px;text-align:center}.order h2{margin:0 0 8px;font-size:2rem}.order p{max-width:700px;margin:0 auto 18px;color:#e3f1ff}.order .btn{background:var(--green)}footer{margin-top:35px;background:#052c59;color:#eaf5ff;padding:24px 4%;text-align:center}footer strong{color:#baff7b}.footer-small{font-size:.85rem;color:#c5d9eb}
+@media(max-width:760px){.hero{grid-template-columns:1fr;padding-top:28px}.hero-img{max-width:600px;margin:auto}.grid,.sales-grid{grid-template-columns:1fr}.bulk{grid-template-columns:1fr}.topbar{align-items:flex-start}.brand{font-size:1.45rem}nav{width:100%}nav a{padding:8px 10px}.card{padding:18px}.pack-list{grid-template-columns:1fr 1fr}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
 </head>
-
 <body>
-
-<header class="hero">
-    <img src="logo.png" class="logo" alt="Deco Desk And Design Logo">
-
-    <h1>DECO DESK AND DESIGN</h1>
-
-    <h2>Building Views and Vision for a Better Environment and Space</h2>
-
-    <p>Construction • Solar • Furniture • Printing & Branding</p>
-
-    <a href="quote.html" class="btn">Request a Free Quote</a>
+<header class="topbar">
+  <div><div class="brand">DECO <span>STORE</span></div><div class="tagline">Cleaner homes • Healthier spaces</div></div>
+  <nav aria-label="Main navigation">
+    <a href="#range">Our range</a><a href="#sizes">Sizes & bulk</a><a href="#sales">Sales</a><a href="#order">Order</a>
+  </nav>
 </header>
-
-<nav>
-    <a href="index.html">Home</a>
-    <a href="Service.html">Services</a>
-    <a href="Shop.html">Shop</a>
-    <a href="Portfolio.html">Portfolio</a>
-    <a href="Contact.html">Contact</a>
-</nav>
-
-<section class="container">
-    <h2>Welcome</h2>
-
-    <div class="card">
-        <p>
-            Welcome to <strong>Deco Desk And Design</strong>.
-            We provide professional construction, solar installations,
-            furniture manufacturing, printing, branding and graphic design
-            services throughout South Africa. We are committed to quality
-            workmanship, reliable service, and customer satisfaction on every project.
-        </p>
+<main>
+  <div class="wrap hero">
+    <div>
+      <div class="eyebrow">Deco Store cleaning range</div>
+      <h1>Premium <span>cleaning</span> solutions</h1>
+      <p>Explore everyday cleaning products for homes, workplaces and businesses. Tap each product to reveal more details, available sizes and bulk-order information.</p>
+      <a class="btn" href="#range">Explore products ↓</a>
+      <a class="btn secondary" href="#order" style="margin-left:6px">Ask about bulk sales</a>
     </div>
-</section>
+    <img class="hero-img" src="assets/deco-store-cleaning-range.png" alt="Deco Store cleaning range promotional image featuring dishwashing liquid, multipurpose cleaning cream and pine gel">
+  </div>
+  <div class="strip">POWERFUL CLEANING • FRESH FRAGRANCES • VALUE FOR EVERYDAY USE</div>
 
-<section class="container">
-    <h2>Our Services</h2>
-
-    <div class="services">
-
-        <div class="card">
-            <h3>🏗 Construction</h3>
-            <p>Residential, commercial buildings, renovations, paving and roofing.</p>
-        </div>
-
-        <div class="card">
-            <h3>☀ Solar Solutions</h3>
-            <p>Solar panels, inverters, complete installations and maintenance.</p>
-        </div>
-
-        <div class="card">
-            <h3>🔋 Solar Batteries</h3>
-            <p>High-quality Gel and Lithium batteries.</p>
-            <a href="Shop.html" class="btn">View Products</a>
-        </div>
-
-        <div class="card">
-            <h3>⚡ Inverters</h3>
-            <p>Reliable inverters for home and business backup power.</p>
-            <a href="Shop.html" class="btn">View Products</a>
-        </div>
-
-        <div class="card">
-            <h3>🪑 Furniture</h3>
-            <p>Kitchen units, wardrobes, office furniture, TV stands and custom cabinets.</p>
-            <a href="Shop.html" class="btn">View Products</a>
-        </div>
-
-        <div class="card">
-            <h3>🖨 Printing & Branding</h3>
-            <p>Corporate clothing, signage, promotional products, printing and graphic design.</p>
-        </div>
-
+  <section id="range">
+    <div class="wrap">
+      <h2 class="section-title">Our product range</h2>
+      <p class="section-intro">Select “View product details” on any product to see its intended use, packaging and ordering notes.</p>
+      <div class="grid">
+        <article class="card">
+          <div class="product-icon" aria-hidden="true">🫧</div>
+          <h3>Dishwashing Liquid</h3><span class="size">750 ml bottle</span>
+          <p>For everyday dishwashing and helping cut through grease.</p>
+          <details class="details"><summary>View product details</summary><ul><li>Product: R PILE Dishwashing Liquid</li><li>Pack shown: 750 ml bottle</li><li>Use: washing dishes and kitchen utensils.</li><li>Bulk quantities: ask us about larger packaging and wholesale availability.</li></ul><p class="small-note">Follow the product label for directions and precautions.</p></details>
+        </article>
+        <article class="card">
+          <div class="product-icon" aria-hidden="true">✨</div>
+          <h3>Multipurpose Cleaning Cream</h3><span class="size">750 ml bottle</span>
+          <p>A cream cleaner for suitable hard surfaces around the home or workplace.</p>
+          <details class="details"><summary>View product details</summary><ul><li>Product: R PILE Multipurpose Cleaning Cream</li><li>Pack shown: 750 ml bottle</li><li>Use: suitable surfaces as directed on the label.</li><li>Tip: test on a small, hidden area first and avoid delicate surfaces unless the label permits.</li><li>Bulk quantities: enquire for larger packs and wholesale options.</li></ul></details>
+        </article>
+        <article class="card">
+          <div class="product-icon" aria-hidden="true">🌲</div>
+          <h3>Pine Gel</h3><span class="size">1 kg tub</span>
+          <p>A multipurpose cleaning gel with a fresh pine fragrance.</p>
+          <details class="details"><summary>View product details</summary><ul><li>Product: R PILE Pine Gel</li><li>Pack shown: 1 kg tub</li><li>Use: follow the directions on the product label for the intended surfaces.</li><li>Bulk quantities: ask about multi-unit orders and larger packaging.</li></ul><p class="small-note">Do not mix cleaning products together. Keep out of reach of children.</p></details>
+        </article>
+      </div>
     </div>
-</section>
+  </section>
 
-<section class="container">
-    <h2>Recent Projects</h2>
-
-    <div class="services">
-
-        <div class="card">
-            <h3>🏡 Home Construction</h3>
-            <p>Modern residential construction projects completed to the highest standards.</p>
+  <section id="sizes">
+    <div class="wrap">
+      <h2 class="section-title">Sizes & bulk packaging</h2>
+      <p class="section-intro">The product photos show retail packs. Larger containers are enquiry-based and must be confirmed before ordering.</p>
+      <div class="bulk">
+        <div>
+          <h2>Buying for your home or your business?</h2>
+          <p>Deco Store welcomes enquiries from households, cleaning teams, offices, schools, shops and resellers.</p>
+          <ul><li>Retail packs for everyday use</li><li>Multi-unit orders for regular customers</li><li>Bulk-packaging enquiries for business customers</li><li>Wholesale pricing depends on product, pack size and quantity</li></ul>
+          <p class="small-note">Large sizes such as 5 L, 10 L, 20 L or 25 L are not guaranteed for every product. Contact us to confirm availability, price and lead time.</p>
         </div>
-
-        <div class="card">
-            <h3>☀ Solar Installation</h3>
-            <p>Professional solar power systems for homes and businesses.</p>
+        <div class="pack-list">
+          <div class="pack">750 ml<span>Dishwashing liquid</span></div>
+          <div class="pack">750 ml<span>Cleaning cream</span></div>
+          <div class="pack">1 kg<span>Pine gel tub</span></div>
+          <div class="pack">Bulk packs<span>Ask about 5 L, 10 L, 20 L or 25 L options</span></div>
         </div>
-
-        <div class="card">
-            <h3>👕 Branding</h3>
-            <p>Corporate clothing, vehicle branding and promotional materials.</p>
-        </div>
-
+      </div>
     </div>
-</section>
+  </section>
 
-<section class="container">
-    <h2>Why Choose Us?</h2>
-
-    <div class="card">
-        <p>✅ Professional workmanship</p>
-        <p>✅ Affordable pricing</p>
-        <p>✅ Free quotations</p>
-        <p>✅ Quality materials</p>
-        <p>✅ Reliable customer service</p>
-        <p>✅ Experienced team</p>
+  <section id="sales">
+    <div class="wrap">
+      <h2 class="section-title">Sales & ordering</h2>
+      <p class="section-intro">We can help you choose the right quantity. Prices and stock are confirmed when you enquire, so the website never promises an unconfirmed price.</p>
+      <div class="sales-grid">
+        <div class="sale"><strong>Retail sales</strong>Buy individual products in the sizes shown, subject to stock availability.</div>
+        <div class="sale"><strong>Multi-unit sales</strong>Ask for a quote when purchasing several bottles or tubs at once.</div>
+        <div class="sale"><strong>Bulk & wholesale enquiries</strong>Request a quote for larger quantities, business use or resale. Price depends on the confirmed order.</div>
+      </div>
     </div>
-</section>
+  </section>
 
-<section class="container">
-    <h2>What Our Customers Say</h2>
-
-    <div class="services">
-
-        <div class="card">
-            <h3>⭐⭐⭐⭐⭐</h3>
-            <p>"Excellent workmanship and professional service. Highly recommended!"</p>
-        </div>
-
-        <div class="card">
-            <h3>⭐⭐⭐⭐⭐</h3>
-            <p>"Our solar installation was completed on time and works perfectly."</p>
-        </div>
-
-        <div class="card">
-            <h3>⭐⭐⭐⭐⭐</h3>
-            <p>"Quality furniture and friendly customer service."</p>
-        </div>
-
+  <section id="order">
+    <div class="wrap">
+      <div class="order">
+        <h2>Ready to order?</h2>
+        <p>Message Deco Store to check current stock, get prices, confirm bulk-pack sizes and request a quotation.</p>
+        <a class="btn" href="https://wa.me/27655342706?text=Hello%20Deco%20Store%2C%20please%20send%20me%20your%20current%20cleaning%20product%20prices%2C%20available%20sizes%20and%20bulk%20packaging%20options." target="_blank" rel="noopener">Enquire on WhatsApp</a>
+        <p class="footer-small" style="margin-top:14px">Please confirm availability and final pricing before making payment.</p>
+      </div>
     </div>
-</section>
-
-<section class="container">
-    <h2>Contact Us</h2>
-
-    <div class="card">
-        <p><strong>📞 Phone:</strong> 065 534 2707</p>
-        <p><strong>💬 WhatsApp:</strong> 065 534 2706</p>
-        <p><strong>📧 Email:</strong> Decodeskanddesign@yahoo.com</p>
-        <p><strong>📍 Address:</strong> 290 Swan Street, Swanaville, South Africa</p>
-
-        <a href="quote.html" class="btn">Request a Free Quote</a>
-    </div>
-</section>
-
+  </section>
+</main>
 <footer>
-    <h2>DECO DESK AND DESIGN</h2>
-
-    <p>Building Views and Vision for a Better Environment and Space.</p>
-
-    <p>Construction • Solar • Furniture • Printing & Branding</p>
-
-    <p>&copy; 2026 Deco Desk And Design. All Rights Reserved.</p>
+  <strong>DECO STORE</strong> • Quality products • Clean spaces • Better living
+  <div class="footer-small">Cleaning products • Retail and bulk enquiries • South Africa</div>
 </footer>
-
-<a href="https://wa.me/27655342706"
-   class="whatsapp-float"
-   target="_blank"
-   title="Chat with us on WhatsApp">
-    💬
-</a>
-
-<script src="script.js"></script>
-
 </body>
-</html>
+      </html>
+                                             
